@@ -1,0 +1,178 @@
+.title h1{
+    font-size: 300%;
+    color: #ffc158;
+    font-family: 'SuperPositive', sans-serif;
+    }
+    .divCentral{
+        padding: 2.5rem;
+    }
+    .formDeposit label{
+                display: flex;
+                margin-top: 0.9rem;
+                flex-direction: column;
+            }
+    .formDeposit input{
+                border-radius: 0.4rem;
+                background: #263043;
+            }
+            [type=text]:focus, input:where(:not([type])):focus, [type=email]:focus, [type=url]:focus, [type=password]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=week]:focus, [multiple]:focus, textarea:focus, select:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        --tw-ring-inset: var(--tw-empty);
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #ffc158;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+        border-color: #ffc158;
+    }
+    /* Muda a cor do ícone de olho padrão para branco */
+    input[type="password"]::-webkit-input-placeholder {
+        color: white !important;
+    }
+    .styleDp{
+        font-weight: 800;
+    }
+    .buttonDeposit{
+        margin-top: 1.2rem;
+    }
+    .buttonDeposit button:disabled{
+        background: #36393e;
+        color: #fff;
+
+    }
+    .buttonDeposit button:hover{
+        background: #e9a631
+    }
+    .buttonDeposit button{
+        background: #ffc158;
+        font-size: 140%;
+        font-family: 'SuperPositive', sans-serif;
+        padding: 0.5rem;
+        width: 100%;
+        border-radius: 5px;
+        transition: all 0.2s;
+        color: #263043;
+    }
+    .imagePix{
+        margin-top: 1.2rem;
+    }
+    .imagePix img{
+        width: 20%;
+    }
+    .bg-InfomationsDeposit{
+        margin-top: 1.2rem;
+        background: #ffc158;
+        border-radius: 0.4rem;
+        padding: 0.5rem;
+        color: #263043;
+        font-weight: 800;
+    }
+
+    @media screen and (min-width:726px){
+        .formDeposit form{
+            width: 40%;
+        }
+        .bg-InfomationsDeposit{
+            width: 75%;
+        }
+
+    }
+
+    @media screen and (max-width:1284px){
+        .formDeposit form{
+            width: 90%;
+        }
+    }
+    @media screen and (max-width:726px){
+        .imagePix img{
+            width: 50%;
+        }
+    }
+
+    .modalDeposit .content .title h1{
+        font-size: 1.7rem;
+    }
+    .modalDeposit .content .title{
+        padding: 0.5rem;
+    }
+    .modalDeposit .content .exit{
+        position: absolute;
+        right: 1rem;
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+    .modalDeposit .content .corpoQr img{
+        width: 10rem;
+        background: #fff;
+        border-radius: 10px;
+    }
+    .modalDeposit .content .corpoQr{
+        display: flex;
+        justify-content: center;
+    }
+    .modalDeposit .content .ButtonCopy button:hover{
+        background: #e9a631;
+    }
+    .modalDeposit .content .ButtonCopy button{
+        padding: 0.3rem;
+        transition: all 0.2s;
+        background: #ffc158;
+        border-radius: 5px;
+        color: #263043;
+        font-weight: bold;
+        font-size: 120%;
+        width: 100%;
+    }
+    .modalDeposit .content .ButtonCopy{
+        width: 100%;
+    }
+    .modalDeposit .content .qrCopia .code{
+        word-wrap: break-word;
+    }
+    .modalDeposit .content .qrCopia .code{
+        padding: 0.35rem;
+        background: #263043;
+        border-left: 4px solid #ffffff5b;
+        border-radius: 6px;
+        font-weight: 200;
+        flex-wrap: wrap;
+    }
+    .modalDeposit .content .qrCopia{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .modalDeposit .content{
+        background: #1d2634;
+        top: 50%;
+        position: absolute;
+        padding: 0.4rem;
+        width: 85%;
+        border-radius: 10px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: opacity 0.6s ease;
+    }
+    .modalDeposit{
+        position: fixed;
+        top: 0;
+        left: 0 ;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 30, 31, 0.61);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.1s ease, visibility 0.1s ease;
+    }
+
+    .modalDeposit-show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modalDeposit-show .content {
+        opacity: 1;
+    }

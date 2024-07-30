@@ -1,0 +1,233 @@
+.divCentral{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.logotipo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.jogarContain{
+    width: 30%;
+    margin-top: 1.5rem
+}
+.jogarContain button:hover{
+    background: #1cc074;
+}
+.jogarContain.orange button{
+    background: #ffc258;
+}
+.jogarContain button{
+    padding: 0.6rem;
+    background: #4aeba1;
+    color: #1d2634;
+    font-weight: bold;
+    width: 100%;
+    font-size: 120%;
+    box-shadow: rgba(0, 212, 124, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+    transition: all 0.4s;
+
+}
+.spanObs{
+    margin-top: 1rem;
+}
+.formGaming{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inptvalue{
+    margin-top: 1.5rem;
+    width: 30%;
+    display: flex;
+
+}
+.inptvalue button:hover{
+    background: #1b2029;
+}
+.inptvalue button{
+    border-radius: 10px;
+    font-size: 110%;
+    width: 4rem;
+    padding: 0.7rem;
+    border: 1px solid #6b7280;
+    transition: all 0.4s;
+}
+.inptvalue input:focus{
+    border: 1px solid #ffc258;
+    --tw-ring-color: #ffc25800;
+}
+.inptvalue input{
+    border-radius: 10px;
+    padding: 0.7rem;
+    width: 100%;
+    background: #1d2634;
+}
+.gamesaldo .sp2{
+    font-weight: bold;
+}
+.gamesaldo .sp1{
+
+}
+.gamesaldo{
+    padding: 0.6rem;
+    background: #ffc258;
+    color: #1b2029;
+    box-shadow: rgba(0, 212, 124, 0.1) 0px 4px 12px;
+    margin-top: 1rem;
+    font-size: 100%;
+    border: #1cc074 1px solid;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+@media screen and (max-width:1028px){
+    .jogarContain button{
+        width: 100%
+    }
+    .jogarContain{
+        width: 80%;
+    }
+    .divCentral{
+        padding: 1.4rem;
+    }
+    .logotipo{
+        width: 80%;
+    }
+    .inptvalue{
+        width: 80%;
+    }
+    .gamesaldo{
+        width: 80%
+    }
+}
+@media screen and (max-width:726px){
+    .jogarContain button{
+        width: 100%
+    }
+    .jogarContain{
+        width: 100%;
+    }
+    .divCentral{
+        padding: 1.4rem;
+    }
+    .logotipo{
+        width: 100%;
+    }
+    .inptvalue{
+        width: 100%;
+    }
+    .gamesaldo{
+        width: 100%
+    }
+}
+.modalDp{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #1b202971;
+    visibility: hidden;
+}
+.modalDp.show {
+animation: showModal 0.3s forwards;
+}
+
+@keyframes showModal {
+0% {
+opacity: 0;
+visibility: visible;
+}
+100% {
+opacity: 1;
+visibility: visible;
+}
+}
+
+.modalDp.hide {
+animation: hideModal 0.3s forwards;
+}
+
+@keyframes hideModal {
+0% {
+opacity: 1;
+visibility: visible;
+}
+100% {
+opacity: 0;
+visibility: hidden;
+}
+}
+.contentModalDp h1{
+    color: #ffc258;
+    font-size: 1.6rem;
+    font-family: 'SuperPositive', sans-serif;
+}
+.contentModalDp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    border-radius: 10px;
+    padding: 1.1rem;
+    background: #1b2029;
+    box-shadow: rgba(240, 176, 81, 0.2) 0px 8px 24px;
+}
+@media screen and (max-width:1024px){
+    .contentModalDp{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:726){
+    .contentModalDp{
+        width: 95%;
+    }
+}
+
+.bntdep{
+    margin-top: 1.2rem;
+    width: 100%;
+
+}
+.bntdep button{
+    width: 100%;
+    padding: 0.7rem;
+    background: #1cc074;
+    border-radius: 10px;
+    color: #1b2029;
+    font-weight: bold;
+}
+.slif i{
+    font-size: 1.8rem;
+}
+.slif{
+    display: flex;
+    justify-content: space-between
+}
+#closeModalDp{
+    cursor: pointer;
+}
+.GANHO{
+    width: 100%;
+    background: #1cc074;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    font-weight: 900;
+    font-size: 120%;
+    text-align: center;
+}
+.GANHO span{
+    color: #1d2634;
+}

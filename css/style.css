@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('/assets/images/background-p1.jpg');
+}
+
+.gamestite img{
+    width: 50%;
+}
+.gamestite{
+    display: flex;
+    justify-content: center;
+}
+.conterTps{
+    width: 100%;
+}
+
+#game{
+	position: relative;
+    width: 100%;
+}
+.gamestatus .dinheiro{
+    padding: 0.8rem;
+    color: #fff;
+    border: 2px solid #30a701ce;
+    width: 100%;
+    box-shadow: rgba(40, 141, 1, 0.25) 0px 54px 55px, rgba(209, 125, 0, 0.12) 0px -12px 30px, rgba(0, 238, 20, 0.12) 0px 4px 6px, rgba(52, 224, 0, 0.17) 0px 12px 13px, rgba(0, 218, 11, 0.09) 0px -3px 5px;
+    font-size: 150%;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    background: #189100;
+
+}
+.gamestatus .points{
+    padding: 0.8rem;
+    border: 2px solid #ffd902ce;
+    box-shadow: rgba(182, 139, 0, 0.25) 0px 54px 55px, rgba(209, 125, 0, 0.12) 0px -12px 30px, rgba(238, 202, 0, 0.12) 0px 4px 6px, rgba(224, 120, 0, 0.17) 0px 12px 13px, rgba(218, 160, 0, 0.09) 0px -3px 5px;
+    background: #c27f00;
+    width: 100%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.7rem;
+    max-width: 600px;
+}
+.gamestatus{
+    margin-top: 18rem;
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+@media screen and (min-width:1024px){
+    .gamestatus{
+        margin-top: 26rem;
+    }
+}
+.cnv{
+	position: absolute;
+    left: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transform: translate(-50%);
+	border-style: solid;
+}
+
+#canvasFood{
+	background-color: transparent;
+	z-index: 2;
+}
+
+#canvasHex{
+	background-color: black;
+	z-index: 1;
+}
+
+#canvasSnake{
+	background-color: transparent;
+	z-index: 3;
+}

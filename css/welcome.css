@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'SuperPositive';
+    src: url('snake/fonts/super_positive/Super Positive Personal Use.ttf') format('truetype');
+}
+        :root {
+            --verde: #4aeba1;
+            --amarelo: #ffc158;
+            --branco: #ffffff;
+            --azul: #1d3f4b;
+            --rodapebg: #9a6634;
+            --background-imagem-p1: url('/assets/images/background-p1.jpg');
+            --background-imagem-p2: url('/assets/images/background-p2.jpg');
+            --background-imagem-p3: url('/assets/images/background-p3.jpg');
+            --background-imagem-p4: url('/assets/images/background-p4.jpg');
+
+
+            --background-imagem-pm1: url('/assets/images/Bg-1.jpg');
+            --background-imagem-pm2: url('/assets/images/Bg-2.jpg');
+            --background-imagem-pm3: url('/assets/images/Bg-3.jpg');
+            --background-imagem-pm4: url('/assets/images/Bg-4.jpg');
+
+
+
+
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+            background: #4aeba1
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #ffc158
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        @font-face {
+    font-family: 'Brocats';
+    src: url('/fonts/brocats/Brocats.tff') format('truetype');
+}
+
+        .session01 {
+            width: 100vw;
+            height: 95vh;
+            background-image: var(--background-imagem-p1);
+            background-position: bottom;
+            display: flex;
+            flex-direction: column;
+            background-size:cover;
+            justify-content: center;
+            align-items: center;
+        }
+        .mascoteWelcome{
+            display: flex;
+            margin-top: 1.928rem;
+            justify-content: center;
+        }
+        .mascoteWelcome img{
+            width: 70%;
+        }
+        .logotipo{
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center
+        }
+        .logotipo img{
+            width: 80%
+        }
+        .session02{
+            width: 100vw;
+            height: 65vh;
+            background-image: var(--background-imagem-p2);
+            background-position: top;
+            display: flex;
+            position: relative;
+            background-size:cover;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .session03{
+            width: 100vw;
+            height: 65vh;
+            background-image: var(--background-imagem-p3);
+            background-position: top;
+            display: flex;
+            position: relative;
+            background-size:cover;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .session04{
+            width: 100vw;
+            height: 65vh;
+            background-image: var(--background-imagem-p4);
+            background-position: top;
+            display: flex;
+            position: relative;
+            background-size:cover;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .session02 .sec2{
+            position: absolute;
+            left: 0;
+            width: 50vw;
+            padding: 0.3rem;
+            font-size: 2rem;
+            display: flex;
+            font-family: 'SuperPositive', sans-serif;
+            color: #fff;
+            font-weight: 200;
+            flex-direction: column;
+        }
+        .session03 .sec3{
+            position: absolute;
+            right: 0;
+            width: 50vw;
+            padding: 0.3rem;
+            font-size: 2rem;
+            display: flex;
+            font-family: 'SuperPositive', sans-serif;
+            color: #fff;
+            font-weight: 200;
+            flex-direction: column;
+        }
+        .session04 .sec3{
+            position: absolute;
+            left: 0;
+            width: 50vw;
+            padding: 0.3rem;
+            font-size: 2rem;
+            display: flex;
+            font-family: 'SuperPositive', sans-serif;
+            color: #fff;
+            font-weight: 200;
+            flex-direction: column;
+        }
+        .logotipo2{
+            margin-left: 2.5rem;
+            display: flex;
+            justify-content: start
+        }
+        .logotipo2 img{
+            width: 50%
+        }
+        .buttonJogar{
+            display: flex;
+            justify-content: center;
+        }
+        .buttonJogar button{
+            font-weight: 800;
+            color: #1d3f4b;
+            padding: 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 100%;
+            border-top-right-radius: 40px;
+            font-family: 'SuperPositive', sans-serif;
+            margin-top: 1rem;
+            border-bottom-left-radius: 40px;
+            background: #4aeba1;
+            width: 80%;
+        }
+        .pacontent{
+            padding: 2.5rem;
+        }
+
+        footer{
+            background: #9a6634;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .imag img{
+            width: 10%;
+        }
+        .imag{
+            width: 100%;
+            padding: 0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width:726px){
+            .imag img{
+            width: 30%;
+        }
+        .session01{
+            background-image: var(--background-imagem-pm1)
+        }
+        .session02{
+            background-image: var(--background-imagem-pm2);
+            height: 100vh;
+        }
+        .session03 .sec3{
+            width: 100%;
+            font-size: 1.5rem;
+            bottom: 0;
+        }
+        .session04 .sec3{
+            width: 100%;
+            font-size: 1.5rem;
+            bottom: 0;
+        }
+        .session04{
+            background-image: var(--background-imagem-pm4);
+            height: 100vh;
+        }
+        .session03{
+            background-image: var(--background-imagem-pm3);
+            height: 110vh;
+        }
+        .session02 .sec2{
+            width: 100%;
+            font-size: 1.5rem;
+            bottom: 0;
+        }
+        .mascoteWelcome img{
+            width: 100%;
+        }
+        }
+        .directs h2{
+            font-size: 1.2rem;
+        }
+        .directs{
+            color: #fff;
+            font-family: 'SuperPositive', sans-serif;
+            text-align: center;
+        }
